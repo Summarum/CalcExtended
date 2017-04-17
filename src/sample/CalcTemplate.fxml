@@ -15,40 +15,41 @@
          <children>
             <Pane layoutX="10.0" layoutY="8.0" prefHeight="354.0" prefWidth="575.0">
                <children>
-                  <TextField fx:id="textFieldMain" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="549.0" />
-                  <Button layoutX="14.0" layoutY="54.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="65.0" text="Delete" />
-                  <Button layoutX="79.0" layoutY="54.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="65.0" text="X" />
-                  <Button layoutX="14.0" layoutY="102.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="65.0" text="7" />
-                  <Button layoutX="79.0" layoutY="102.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="65.0" text="8" />
-                  <Button layoutX="14.0" layoutY="150.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="65.0" text="4" />
-                  <Button layoutX="79.0" layoutY="150.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="65.0" text="5" />
-                  <Button fx:id="btn_1" layoutX="14.0" layoutY="198.0" mnemonicParsing="false" onMouseClicked="#btn_1_click" prefHeight="48.0" prefWidth="65.0" text="1" />
-                  <Button layoutX="79.0" layoutY="198.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="65.0" text="2" />
-                  <Button layoutX="14.0" layoutY="246.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="195.0" text="0" />
-                  <Button layoutX="209.0" layoutY="102.0" mnemonicParsing="false" prefHeight="144.0" prefWidth="65.0" text="+">
+                  <TextField id="textFieldMain" fx:id="textFieldMain" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="549.0" />
+                  <Button fx:id="btn_del" layoutX="9.0" layoutY="91.0" mnemonicParsing="false" onMouseClicked="#btn_del_click" prefHeight="48.0" prefWidth="65.0" text="Delete" />
+                  <Button fx:id="btn_x" layoutX="74.0" layoutY="91.0" mnemonicParsing="false" onMouseClicked="#btn_x_click" prefHeight="48.0" prefWidth="65.0" text="X" />
+                  <Button fx:id="btn_7" layoutX="9.0" layoutY="139.0" mnemonicParsing="false" onMouseClicked="#btn_7_click" prefHeight="48.0" prefWidth="65.0" text="7" />
+                  <Button fx:id="btn_8" layoutX="74.0" layoutY="139.0" mnemonicParsing="false" onMouseClicked="#btn_8_click" prefHeight="48.0" prefWidth="65.0" text="8" />
+                  <Button fx:id="btn_4" layoutX="9.0" layoutY="187.0" mnemonicParsing="false" onMouseClicked="#btn_4_click" prefHeight="48.0" prefWidth="65.0" text="4" />
+                  <Button fx:id="btn_5" layoutX="74.0" layoutY="187.0" mnemonicParsing="false" onMouseClicked="#btn_5_click" prefHeight="48.0" prefWidth="65.0" text="5" />
+                  <Button fx:id="btn_1" layoutX="9.0" layoutY="235.0" mnemonicParsing="false" onMouseClicked="#btn_1_click" prefHeight="48.0" prefWidth="65.0" text="1" />
+                  <Button fx:id="btn_2" layoutX="74.0" layoutY="235.0" mnemonicParsing="false" onMouseClicked="#btn_2_click" prefHeight="48.0" prefWidth="65.0" text="2" />
+                  <Button fx:id="btn_0" layoutX="9.0" layoutY="283.0" mnemonicParsing="false" onMouseClicked="#btn_0_click" prefHeight="48.0" prefWidth="195.0" text="0" />
+                  <Button fx:id="btn_add" layoutX="204.0" layoutY="139.0" mnemonicParsing="false" onMouseClicked="#btn_add_click" prefHeight="144.0" prefWidth="65.0" text="+">
                      <font>
                         <Font size="21.0" />
                      </font>
                   </Button>
-                  <Button layoutX="144.0" layoutY="102.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="65.0" text="9" />
-                  <Button layoutX="144.0" layoutY="150.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="65.0" text="6" />
-                  <Button layoutX="144.0" layoutY="198.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="65.0" text="3" />
-                  <Button layoutX="209.0" layoutY="55.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="65.0" text="-">
+                  <Button fx:id="btn_9" layoutX="139.0" layoutY="139.0" mnemonicParsing="false" onMouseClicked="#btn_9_click" prefHeight="48.0" prefWidth="65.0" text="9" />
+                  <Button fx:id="btn_6" layoutX="139.0" layoutY="187.0" mnemonicParsing="false" onMouseClicked="#btn_6_click" prefHeight="48.0" prefWidth="65.0" text="6" />
+                  <Button fx:id="btn_3" layoutX="139.0" layoutY="235.0" mnemonicParsing="false" onMouseClicked="#btn_3_click" prefHeight="48.0" prefWidth="65.0" text="3" />
+                  <Button fx:id="btn_min" layoutX="204.0" layoutY="92.0" mnemonicParsing="false" onMouseClicked="#btn_min_click" prefHeight="48.0" prefWidth="65.0" text="-">
                      <font>
                         <Font size="22.0" />
                      </font>
                   </Button>
-                  <Button defaultButton="true" layoutX="209.0" layoutY="246.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="65.0" text="=" />
-                  <Button layoutX="144.0" layoutY="54.0" mnemonicParsing="false" prefHeight="7.0" prefWidth="65.0" text="÷">
+                  <Button fx:id="btn_equals" defaultButton="true" layoutX="204.0" layoutY="283.0" mnemonicParsing="false" onMouseClicked="#btn_equals_click" prefHeight="48.0" prefWidth="65.0" text="=" />
+                  <Button layoutX="139.0" layoutY="91.0" mnemonicParsing="false" prefHeight="7.0" prefWidth="65.0" text="÷">
                      <font>
                         <Font size="26.0" />
                      </font>
                   </Button>
-                  <Button id="exchange_btn" layoutX="274.0" layoutY="102.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="299.0" text="Exchange" />
-                  <ChoiceBox layoutX="274.0" layoutY="79.0" prefWidth="150.0" />
-                  <ChoiceBox layoutX="424.0" layoutY="79.0" prefWidth="150.0" />
-                  <Label layoutX="333.0" layoutY="55.0" text="Base" />
-                  <Label layoutX="478.0" layoutY="55.0" text="Target" />
+                  <Button id="exchange_btn" layoutX="269.0" layoutY="139.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="299.0" text="Exchange" />
+                  <ChoiceBox layoutX="269.0" layoutY="116.0" prefWidth="150.0" />
+                  <ChoiceBox layoutX="419.0" layoutY="116.0" prefWidth="150.0" />
+                  <Label layoutX="328.0" layoutY="92.0" text="Base" />
+                  <Label layoutX="473.0" layoutY="92.0" text="Target" />
+                  <TextField fx:id="resultTextField" editable="false" layoutX="14.0" layoutY="56.0" prefHeight="26.0" prefWidth="547.0" />
                </children>
             </Pane>
          </children></AnchorPane>
